@@ -24,6 +24,9 @@ Template.main.events = {
 	'click #submit': function(){
 		var email = $('.subscribe').val();
 		Meteor.call("store_email", email);
+		$('#thanks').html(Template["thanks"]());
+		$('.subscribe').val('');
+		$('#thanks').focus();
 	}
 }
 
