@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(function() {
     jQuery.history.listen()
     $('.nav .scroll').click(function() {
-      $.history.push('index.html' + $(this).attr('href'));
+      $.history.push($(this).attr('href'));
     });
   });
   
