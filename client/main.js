@@ -24,7 +24,7 @@ Template.main.events = {
 	'click #submit': function(){
 		var email = $('.subscribe').val();
 		Meteor.call("store_email", email);
-		$('#thanks').html(Template["thanks"]());
+		$('#thanks').html(Template["thanks"]({user:email}));
 		$('.subscribe').val('');
 		$('#thanks').focus();
 	}
@@ -51,4 +51,3 @@ processNavbar = function(evt){
 	$(evt.target).parent().addClass('active');
 	console.log($(evt.target).parent());
 }
-
