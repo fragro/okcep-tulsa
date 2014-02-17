@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "GAnalytics": {},
+      "handlebar-helpers": {}
+    },
+    "packages": {
+      "GAnalytics": {
+        "git": "https://github.com/datariot/meteor-ganalytics.git",
+        "tag": "v0.1.1",
+        "commit": "91b19d37687bb2cd7976fb43b482143a53509d7e"
+      },
+      "handlebar-helpers": {
+        "git": "https://github.com/raix/Meteor-handlebar-helpers.git",
+        "tag": "v0.0.9",
+        "commit": "71e94c99462b8801a34c5363510758b6ff5f5ac7"
+      }
+    }
+  }
+}
